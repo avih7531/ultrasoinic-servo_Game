@@ -1,2 +1,2 @@
 # ultrasoinic-servo_Game
-Freshman Sensor Engineering Project
+Make randNum only be in increments of 5!
