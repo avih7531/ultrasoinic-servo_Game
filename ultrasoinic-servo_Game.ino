@@ -20,6 +20,7 @@ void setup() {
   control.attach(12); // attaches the servo on pin 9
   ultra.attach(13); // attaches the servo on pin 10
   Serial.begin(9600); // open the serial port at 9600 bps
+
 }
 
 void loop() { //main loop
