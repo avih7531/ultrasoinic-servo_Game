@@ -1,2 +1,2 @@
 # ultrasoinic-servo_Game
-Pray to Hashem this array thing works
+The .ino file is the game, the other two files are the librarys which the game requires. Enjoy!
