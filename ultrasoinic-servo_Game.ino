@@ -38,6 +38,11 @@ void loop() { //main loop
   }
 
   if (angle = randNum) { // if angle is FINALLY equal to randNum:
+    lcd.clear();
+    lcd.setCursor(0, 0); // defines position of cursor (first row, first column)
+    lcd.print("WINNER WINNER"); // prints "WINNER WINNER" to the lcd (because its only 2x16 charecters so it has to print it on two lines)
+    lcd.setCursor(0, 1); // defines position of cursor (first row, first second)
+    lcd.print("CHICKEN DINNER"); // prints "CHICKEN DINNER" to the lcd (because its only 2x16 charecters so it has to print it on two lines)
     Serial.print("WIN!"); // print "WIN!" to the monitor
     Serial.print('\n'); // puts cursor on new line
     randNum = 7531; // make randNum an integer angle will never be able to match
