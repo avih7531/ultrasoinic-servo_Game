@@ -35,9 +35,7 @@ void loop() { //main loop
     ultra_void(); // runs the ultra_void function
     // this keeps on going until angle is equal to randNum
 
-  }
-
-  if (angle = randNum) { // if angle is FINALLY equal to randNum:
+if (angle = randNum) { // if angle is FINALLY equal to randNum:
     lcd.clear();
     lcd.setCursor(0, 0); // defines position of cursor (first row, first column)
     lcd.print("WINNER WINNER"); // prints "WINNER WINNER" to the lcd (because its only 2x16 charecters so it has to print it on two lines)
@@ -53,6 +51,8 @@ void loop() { //main loop
 
   }
 
+  }
+  
 }
 
 void cont_void() { // makes a void for the control motor that doesn't loop which can be called in the loop later
@@ -83,6 +83,6 @@ void ultra_void() { // makes a void for the ultrasonic-controlled motor that doe
   lcd.print("     "); // prints spaces so the lcd dosen't get messy
   lcd.setCursor(8, 1); // defines position of cursor (first row, eighth column)
   lcd.print(angle); // prints angle to the lcd on the same line
-  delay(100); // delays for 100 miliseconds so there is no crazy rapid readout
+  delay(1000); //delays for 1000 miliseconds so there is no crazy rapid readout
 
 }
